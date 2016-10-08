@@ -14,7 +14,7 @@ WaitingQueue::WaitingQueue(int max_size) : max_queue_size_(max_size) {
     m_logger_ = Logger::GetLogger();
 }
 
-bool WaitingQueue::AppendPlanes(int f = -1) {
+bool WaitingQueue::AppendPlanes(int f) {
     if (queue_.size() <= max_queue_size_) {
         queue_.push_back(Plane(f));
         return true;

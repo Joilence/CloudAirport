@@ -17,7 +17,7 @@ public:
     WaitingQueue(int max_size);
 
 
-    bool AppendPlanes(int f);
+    bool AppendPlanes(int f = -1);
 
     virtual void RejectPlane(const Plane& p) = 0;
 
